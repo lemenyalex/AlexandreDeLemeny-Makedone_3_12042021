@@ -1,0 +1,19 @@
+{
+  "name": "alexandredelemeny-makedone_3_12042021",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassRooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemenyalex/AlexandreDeLemeny-Makedone_3_12042021.git"
+  },
+  "author": "Alexandre de Lemeny-Makedone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemenyalex/AlexandreDeLemeny-Makedone_3_12042021/issues"
+  },
+  "homepage": "https://github.com/lemenyalex/AlexandreDeLemeny-Makedone_3_12042021#readme"
+}
