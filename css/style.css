@@ -18,4 +18,15 @@ header {
   box-shadow: 0rem 0rem 0.5rem 0 rgba(0, 0, 0, 0.7);
 }
 
+.location {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.location > span {
+  display: flex;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
