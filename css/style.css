@@ -21,12 +21,12 @@ header {
 .location {
   display: flex;
   justify-content: center;
-  width: 100%;
+  padding: 1rem 0 1rem 0;
+  background-color: #e8e8e8;
 }
 
-.location > span {
-  display: flex;
-  width: 100%;
+> span {
+  padding-left: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
