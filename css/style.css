@@ -2,7 +2,7 @@ header {
   font-family: "Shrikhand", cursive;
 }
 
-span {
+span, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -70,6 +70,42 @@ header {
 }
 .menu__btn:hover {
   transform: scale(1.15);
+}
+
+.howItWork {
+  padding: 3rem 1rem 3rem 1rem;
+}
+.howItWork__title {
+  font-size: 1.7rem;
+}
+.howItWork__step {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem 2rem;
+  padding: 1.5rem 0 1.5rem 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
+}
+.howItWork__step__number {
+  position: relative;
+  right: 1rem;
+  color: white;
+  background-color: #9356dc;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.howItWork__step__text {
+  font-weight: bold;
+  padding: 0 0 0 1rem;
+  margin: 0 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

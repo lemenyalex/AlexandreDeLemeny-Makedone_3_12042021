@@ -1,0 +1,39 @@
+.howItWork   {
+    padding: 3rem 1rem 3rem 1rem;
+
+    &__title    {
+        font-size: 1.7rem;
+    }
+
+    &__step {
+        display: flex;
+        align-items: center;
+        margin: 0 0 1rem 2rem;
+        padding: 1.5rem 0 1.5rem 0;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
+
+        &__number   {
+            position: relative;
+            right: 1rem;
+            color: $white;
+            background-color: $colour-primary;
+            padding: .3rem .5rem .3rem .5rem;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+        }
+
+        &__text {
+            font-weight: bold;
+            padding: 0 0 0 1rem;
+            margin: 0 0 0 0;
+        }
+    }
+}
