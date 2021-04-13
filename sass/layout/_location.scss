@@ -1,10 +1,9 @@
 .location {
     display: flex;
-    justify-items: center;
-    padding: .5rem 0 .5rem 0;
-    background-color: $grey;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    background-color: $location-colour;
 }
     > span   {
-        display: inline-flex;
-        justify-self: center;
+        padding-left: 1rem;
     }
