@@ -1,0 +1,38 @@
+.menu    {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem 3rem 3rem;
+
+    &__title    {
+        display: flex;
+        font-weight: bold;
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 0 0 1rem 0;
+    }
+
+    &__subtitle {
+        display: flex;
+        font-weight: 100 ;
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 0 2rem 0;
+    }
+
+    &__btn  {
+        display: block;
+        margin: 0 auto;
+        font-size: 1rem;
+        color : white;
+        border: 0;
+        max-width: fit-content;
+        padding: 1rem 1rem 1rem 1rem;
+        background-image: linear-gradient($colour-secondary, $colour-primary);
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+    }
+}

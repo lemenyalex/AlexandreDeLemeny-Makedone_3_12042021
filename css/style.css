@@ -28,4 +28,40 @@ header {
   padding-left: 1rem;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 3rem 3rem;
+}
+.menu__title {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 0 0 1rem 0;
+}
+.menu__subtitle {
+  display: flex;
+  font-weight: 100;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+.menu__btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: white;
+  border: 0;
+  max-width: fit-content;
+  padding: 1rem 1rem 1rem 1rem;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: 0.5rem 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
 /*# sourceMappingURL=style.css.map */

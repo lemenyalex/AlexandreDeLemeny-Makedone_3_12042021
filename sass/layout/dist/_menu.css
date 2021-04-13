@@ -1,0 +1,17 @@
+.menu {
+  padding: 3rem 3rem 3rem 3rem;
+}
+.menu__title {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 0 0 1rem 0;
+}
+.menu__subtitle {
+  display: flex;
+  font-weight: 100;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
