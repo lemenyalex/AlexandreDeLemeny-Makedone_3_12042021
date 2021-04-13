@@ -22,10 +22,9 @@ header {
   display: flex;
   justify-content: center;
   padding: 1rem 0 1rem 0;
-  background-color: #e8e8e8;
+  background-color: #ece9e9;
 }
-
-> span {
+.location__text {
   padding-left: 1rem;
 }
 
