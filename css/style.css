@@ -95,6 +95,7 @@ header {
 }
 .howItWork__step__icon {
   color: grey;
+  font-size: 1.5rem;
 }
 .howItWork__step__icon__store {
   color: #9356dc;
@@ -115,6 +116,49 @@ header {
   font-weight: bold;
   padding: 0 0 0 1rem;
   margin: 0 0 0 0;
+}
+
+.restaurants {
+  background-color: #f0f0f0;
+  padding: 2rem 1rem 2rem 1rem;
+}
+.restaurants__title {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 1rem 0 1rem 0;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
+}
+.restaurants__card__img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 10rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.restaurants__card__name {
+  padding: 1rem 0 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.restaurants__card__city {
+  padding: 0 1rem 0.5rem 1rem;
+  font-weight: 300;
+}
+.restaurants__card__heart {
+  position: relative;
+  left: calc(100% - 3rem);
+  bottom: 3rem;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
