@@ -151,7 +151,7 @@ header {
   font-size: 1.2rem;
 }
 .restaurants__card__city {
-  padding: 0 1rem 0.5rem 1rem;
+  padding: 0 1rem 0 1rem;
   font-weight: 300;
 }
 .restaurants__card__heart {
@@ -192,6 +192,13 @@ header {
     -ms-transform: scale(1);
     -o-transform: scale(1);
   }
+}
+footer {
+  background-color: #353535;
+}
+footer > img {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 /*# sourceMappingURL=style.css.map */
