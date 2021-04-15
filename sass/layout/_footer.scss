@@ -1,8 +1,23 @@
-footer{
+.footer{
     background-color:$footer-colour;
+    display: flex;
+    flex-direction: column;
 
-    & > img  {
+    &__img  {
+        width: 7rem;
+        padding: 2rem 0 1rem 1rem;
         filter: invert(100%);
         -webkit-filter: invert(100%);
+    }
+
+    &__link {
+        padding: .5rem 0 0 1rem;
+        color: white;
+        text-decoration: none;
+        
+        &__icon {
+            width:1rem;
+            padding: 0 .5rem 0 0;
+        }
     }
 }
