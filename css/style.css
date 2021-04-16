@@ -91,21 +91,24 @@ header {
   box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
 }
 .howItWork__step:hover {
-  background-color: rgba(147, 86, 220, 0.1);
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.howItWork__step:hover .howItWork__step__icon {
+  color: #9356dc;
 }
 .howItWork__step__icon {
   color: grey;
   font-size: 1.5rem;
 }
-.howItWork__step__icon__store {
-  color: #9356dc;
-}
 .howItWork__step__number {
   position: relative;
   right: 1rem;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
   color: white;
   background-color: #9356dc;
-  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;

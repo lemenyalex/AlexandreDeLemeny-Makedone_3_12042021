@@ -18,24 +18,27 @@
         box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
 
         &:hover{
-            background-color:transparentize($colour-primary, 0.9);
+            background-color:transparentize($colour-primary, 0.8);
+
+            .howItWork__step__icon {
+                color: $colour-primary;
+            }
         }
 
         &__icon {
             color: grey;
             font-size: 1.5rem;
-
-            &__store{
-                color: $colour-primary;
-            }
         }
 
         &__number   {
             position: relative;
             right: 1rem;
+            width: 25px;
+            height:25px;
+            text-align: center;
+            line-height: 25px;
             color: $white;
             background-color: $colour-primary;
-            padding: .3rem .5rem .3rem .5rem;
             border-radius: 100%;
             -webkit-border-radius: 100%;
             -moz-border-radius: 100%;
