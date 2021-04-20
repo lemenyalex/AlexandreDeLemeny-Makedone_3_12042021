@@ -1,3 +1,8 @@
 body {
     margin : 0 0 0 0;
 }
+
+.chargement {
+    animation: sortie-animation 1s;
+    -webkit-animation: sortie-animation 1s;
+}
