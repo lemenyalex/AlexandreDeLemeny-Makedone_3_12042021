@@ -168,15 +168,13 @@
     90% {
         opacity: 100%;
     }
-    95% {
 
-    }
     100%    {
         opacity: 0%;
-        transform: translateX(-99999px)    ;
-        -webkit-transform: translateX(-99999px)    ;
-        -moz-transform: translateX(-99999px)    ;
-        -ms-transform: translateX(-99999px)    ;
-        -o-transform: translateX(-99999px)    ;
-}
+        transform: translateX(-99999px);
+        -webkit-transform: translateX(-99999px);
+        -moz-transform: translateX(-99999px);
+        -ms-transform: translateX(-99999px);
+        -o-transform: translateX(-99999px);
+    }
 }
