@@ -27,15 +27,15 @@
         font-size: 1rem;
         color : $white;
         border: 0;
-        max-width: fit-content;
         max-width: -moz-fit-content;
+        max-width: fit-content;
         padding: 1rem 1.3rem 1rem 1.3rem;
         background-image: linear-gradient($colour-secondary, $colour-primary);
-        border-radius: 50px;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
+        border-radius: 50px;
         box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
         transform: scale(1);
         transition-property: transform;

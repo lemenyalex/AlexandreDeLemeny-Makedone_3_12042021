@@ -12,11 +12,11 @@
         flex-direction: column;
         background-color:$white;
         margin: 1rem 0 1rem 0;
-        border-radius: 1rem;
         -webkit-border-radius: 1rem;
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
+        border-radius: 1rem;
         box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
 
         &__img  {
@@ -39,14 +39,14 @@
                 color: #269B7C;
                 padding: .2rem .5rem .2rem .5rem;
                 font-size: .9rem;
-                width: fit-content;
                 width: -moz-fit-content;
+                width: fit-content;
                 border: 1px solid ;
-                border-radius:.2rem;
                 -webkit-border-radius:.2rem;
                 -moz-border-radius:.2rem;
                 -ms-border-radius:.2rem;
                 -o-border-radius:.2rem;
+                border-radius:.2rem;
                 margin: 0 0 0 0;
                 z-index: 2;
             }
@@ -85,24 +85,24 @@
 
 @keyframes heart-hover{
     0% {
-        transform: scale(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
+        transform: scale(1);
 }
     50% {
-        transform: scale(1.5)    ;
-        -webkit-transform: scale(1.5)    ;
-        -moz-transform: scale(1.5)    ;
-        -ms-transform: scale(1.5)    ;
-        -o-transform: scale(1.5)    ;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
 }
     100% {
-        transform: scaleX(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
+        transform: scaleX(1);
     }
 }

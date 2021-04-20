@@ -2,11 +2,6 @@ body {
     margin : 0 0 0 0;
 }
 
-.chargement {
-    animation: sortie-animation 1s;
-    -webkit-animation: sortie-animation 1s;
-}
-
 html    {
         scroll-behavior: smooth; /* Does not work on Safari without Experimentals Features*/
 }
