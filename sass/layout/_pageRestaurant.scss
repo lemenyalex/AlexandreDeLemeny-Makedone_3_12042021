@@ -11,7 +11,7 @@
 
     &__title {
         position: relative;
-        font-weight: 200;
+        font-weight: 300;
         bottom: 2rem;
         font-family: 'Shrikhand', cursive;
         font-size: 1.7rem;
@@ -34,6 +34,19 @@
                 transform: scaleX(1);
                 animation-name: heart-hover;
                 animation-duration: 200ms;
+            }
+        }
+    }
+
+    &__menu {
+
+        &__categorie    {
+
+            &__title {
+
+                font-weight: 300;
+                padding: 0 0 0 1rem;
+                border-bottom: 3px solid $colour-tertiary;
             }
         }
     }

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Ohmyfood</title>
         <meta charset="UTF-8">
+        <title>Ohmyfood</title>
         <meta name="author" content="Alexandre de Lemeny-Makedone">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet"> <!-- Fichier CSS -->
@@ -29,7 +29,7 @@
         <div class="menu">
             <h2 class="menu__title">Réserver le menu qui vous convient</h2>
             <span class="menu__subtitle">Découvrez des restaurants d'exception séléctionnés par nos soins.</span>
-            <button href="" class="menu__btn">   <!-- TODO : Mettre le lien de l'autre page-->
+            <button class="menu__btn">   <!-- TODO : Mettre le lien de l'autre page-->
                 Explorer nos restaurants
             </button>
         </div>
@@ -58,25 +58,42 @@
         <div class="restaurants">
             <span class="restaurants__title">Restaurants</span>
             <div class="restaurants__card">
-                <img class="restaurants__card__img" src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                <div class="restaurants__card__img">
+                    <img class="restaurants__card__img__img" src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                    <div class="restaurants__card__img__new">
+                        Nouveau
+                    </div>
+                </div>
                 <span class="restaurants__card__name">La palette du goût</span>
                 <span class="restaurants__card__city">Ménilmontant</span>
                 <i class="far fa-heart restaurants__card__heart"></i>
             </div>
+
             <div class="restaurants__card">
-                <img class="restaurants__card__img" src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                <div class="restaurants__card__img">
+                    <img class="restaurants__card__img__img" src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                    <div class="restaurants__card__img__new">
+                        Nouveau
+                    </div>
+                </div>
                 <span class="restaurants__card__name">La note enchantée</span>
                 <span class="restaurants__card__city">Charonne</span>
                 <i class="far fa-heart restaurants__card__heart"></i>
             </div>
+
             <div class="restaurants__card">
-                <img class="restaurants__card__img" src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                <div class="restaurants__card__img">
+                    <img class="restaurants__card__img__img" src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                </div>
                 <span class="restaurants__card__name">À la française</span>
                 <span class="restaurants__card__city">Cité Rouge</span>
                 <i class="far fa-heart restaurants__card__heart"></i>
             </div>
+
             <div class="restaurants__card">
-                <img class="restaurants__card__img" src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                <div class="restaurants__card__img">
+                    <img class="restaurants__card__img__img" src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                </div>
                 <span class="restaurants__card__name">Le délice des sens</span>
                 <span class="restaurants__card__city">Folie-Méricourt</span>
                 <i class="far fa-heart restaurants__card__heart"></i>

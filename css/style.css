@@ -169,6 +169,11 @@ body {
   -webkit-animation: sortie-animation 1s;
 }
 
+html {
+  scroll-behavior: smooth;
+  /* Does not work on Safari without Experimentals Features*/
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -300,12 +305,32 @@ header {
   -o-border-radius: 1rem;
   box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
 }
-.restaurants__card__img {
+.restaurants__card__img__img {
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   height: 10rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+.restaurants__card__img__new {
+  display: block;
+  position: relative;
+  left: calc(100% - 5rem);
+  bottom: 9rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #99e2d0;
+  color: #269B7C;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  width: fit-content;
+  border: 1px solid;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  margin: 0 0 0 0;
+  z-index: 2;
 }
 .restaurants__card__name {
   padding: 1rem 0 0.5rem 1rem;
@@ -387,7 +412,7 @@ header {
 }
 .pageRestaurant__title {
   position: relative;
-  font-weight: 200;
+  font-weight: 300;
   bottom: 2rem;
   font-family: "Shrikhand", cursive;
   font-size: 1.7rem;
@@ -410,6 +435,11 @@ header {
   transform: scaleX(1);
   animation-name: heart-hover;
   animation-duration: 200ms;
+}
+.pageRestaurant__menu__categorie__title {
+  font-weight: 300;
+  padding: 0 0 0 1rem;
+  border-bottom: 3px solid #99e2d0;
 }
 
 @keyframes heart-hover {
