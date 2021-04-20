@@ -392,14 +392,14 @@ header {
   border-top-right-radius: 2rem;
   margin: 0 0 0 0;
 }
-.pageRestaurant__title > i {
+.pageRestaurant__title__heart {
   float: right;
   padding: 0 2rem 0 0;
   font-size: 1.5rem;
   margin: 0 0 0 0;
   width: min-content;
 }
-.pageRestaurant__title > i:hover {
+.pageRestaurant__title__heart:hover {
   font-weight: 900;
   color: #9356dc;
   transform: scaleX(1);
