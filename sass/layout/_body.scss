@@ -10,3 +10,9 @@ body {
 html    {
         scroll-behavior: smooth; /* Does not work on Safari without Experimentals Features*/
 }
+
+@media (prefers-reduced-motion: reduce) {      /* https://developer.mozilla.org/fr/docs/Web/CSS/scroll-behavior#accessibilit%C3%A9 */ 
+  html {
+    scroll-behavior: auto;
+  }
+}
