@@ -154,8 +154,8 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
-    animation:sortie-animation 3s;
     -webkit-animation: sortie-animation 3s 0s;
+    animation:sortie-animation 3s;
     animation-fill-mode: forwards
 }
 
@@ -171,10 +171,15 @@
 
     100%    {
         opacity: 0%;
-        transform: translateX(-99999px);
         -webkit-transform: translateX(-99999px);
         -moz-transform: translateX(-99999px);
         -ms-transform: translateX(-99999px);
         -o-transform: translateX(-99999px);
+        transform: translateX(-99999px);
     }
+}
+
+.chargement {
+    -webkit-animation: sortie-animation 1s;
+    animation: sortie-animation 1s;
 }

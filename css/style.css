@@ -131,8 +131,8 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
-  animation: sortie-animation 3s;
   -webkit-animation: sortie-animation 3s 0s;
+  animation: sortie-animation 3s;
   animation-fill-mode: forwards;
 }
 
@@ -145,13 +145,18 @@
   }
   100% {
     opacity: 0%;
-    transform: translateX(-99999px);
     -webkit-transform: translateX(-99999px);
     -moz-transform: translateX(-99999px);
     -ms-transform: translateX(-99999px);
     -o-transform: translateX(-99999px);
+    transform: translateX(-99999px);
   }
 }
+.chargement {
+  -webkit-animation: sortie-animation 1s;
+  animation: sortie-animation 1s;
+}
+
 header {
   font-family: "Shrikhand", cursive;
 }
@@ -162,11 +167,6 @@ span, h1, h2, h3, h4, h5, h6, a {
 
 body {
   margin: 0 0 0 0;
-}
-
-.chargement {
-  animation: sortie-animation 1s;
-  -webkit-animation: sortie-animation 1s;
 }
 
 html {
@@ -225,15 +225,15 @@ header {
   font-size: 1rem;
   color: white;
   border: 0;
-  max-width: fit-content;
   max-width: -moz-fit-content;
+  max-width: fit-content;
   padding: 1rem 1.3rem 1rem 1.3rem;
   background-image: linear-gradient(#ff79da, #9356dc);
-  border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  border-radius: 50px;
   box-shadow: 0.5rem 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
   transform: scale(1);
   transition-property: transform;
@@ -254,11 +254,11 @@ header {
   align-items: center;
   margin: 0 0 1.7rem 2rem;
   padding: 1.5rem 0 1.5rem 0;
-  border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  border-radius: 20px;
   box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
 }
 .howItWork__step:hover {
@@ -280,11 +280,11 @@ header {
   line-height: 25px;
   color: white;
   background-color: #9356dc;
-  border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
+  border-radius: 100%;
 }
 .howItWork__step__text {
   font-weight: bold;
@@ -305,11 +305,11 @@ header {
   flex-direction: column;
   background-color: white;
   margin: 1rem 0 1rem 0;
-  border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  border-radius: 1rem;
   box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
 }
 .restaurants__card__img__img {
@@ -329,14 +329,14 @@ header {
   color: #269B7C;
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   font-size: 0.9rem;
-  width: fit-content;
   width: -moz-fit-content;
+  width: fit-content;
   border: 1px solid;
-  border-radius: 0.2rem;
   -webkit-border-radius: 0.2rem;
   -moz-border-radius: 0.2rem;
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
   margin: 0 0 0 0;
   z-index: 2;
 }
@@ -367,25 +367,25 @@ header {
 
 @keyframes heart-hover {
   0% {
-    transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
-    transform: scaleX(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+    transform: scaleX(1);
   }
 }
 .footer {
@@ -396,8 +396,8 @@ header {
 .footer__img {
   width: 7rem;
   padding: 2rem 0 1rem 1rem;
-  filter: invert(100%);
   -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 .footer__link {
   padding: 0 0 1rem 1rem;
@@ -452,25 +452,25 @@ header {
 
 @keyframes heart-hover {
   0% {
-    transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
-    transform: scaleX(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+    transform: scaleX(1);
   }
 }
 
