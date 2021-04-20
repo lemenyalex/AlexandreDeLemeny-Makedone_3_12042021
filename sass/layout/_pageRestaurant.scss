@@ -1,20 +1,27 @@
 .pageRestaurant {
 
+    height:fit-content;
+
     &__img {
         object-fit: cover;
         width:100%;
         padding: 0 0 0 0;
-    }
+        margin: 0 0 0 0;
+        }
 
     &__title {
 
         font-family: 'Shrikhand', cursive;
         font-size: 1.5rem;
-        padding: 0 0 0 1rem;
+        padding: 2rem 0 0 1rem;
+        background-color:white;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        margin : 0 0 0 0;
 
         & > i   {
             float: right;
-            padding : 0 1rem 0 0;
+            padding : 0 2rem 0 0;
             font-size: 1.5rem;
             margin: 0 0 0 0;
             width:min-content;
