@@ -381,12 +381,15 @@ header {
   margin: 0 0 0 0;
 }
 .pageRestaurant__title {
+  position: relative;
+  font-weight: 200;
+  bottom: 2rem;
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
-  padding: 2rem 0 0 1rem;
+  padding: 1rem 0 0 1rem;
   background-color: white;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
   margin: 0 0 0 0;
 }
 .pageRestaurant__title > i {
