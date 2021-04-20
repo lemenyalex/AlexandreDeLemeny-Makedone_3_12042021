@@ -174,6 +174,12 @@ html {
   /* Does not work on Safari without Experimentals Features*/
 }
 
+@media (prefers-reduced-motion: reduce) {
+  /* https://developer.mozilla.org/fr/docs/Web/CSS/scroll-behavior#accessibilit%C3%A9 */
+  html {
+    scroll-behavior: auto;
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -220,6 +226,7 @@ header {
   color: white;
   border: 0;
   max-width: fit-content;
+  max-width: -moz-fit-content;
   padding: 1rem 1.3rem 1rem 1.3rem;
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 50px;
@@ -323,6 +330,7 @@ header {
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   font-size: 0.9rem;
   width: fit-content;
+  width: -moz-fit-content;
   border: 1px solid;
   border-radius: 0.2rem;
   -webkit-border-radius: 0.2rem;
@@ -402,7 +410,7 @@ header {
 }
 
 .pageRestaurant {
-  height: fit-content;
+  height: auto;
 }
 .pageRestaurant__img {
   object-fit: cover;

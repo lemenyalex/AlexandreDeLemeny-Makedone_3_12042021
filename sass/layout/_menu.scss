@@ -28,6 +28,7 @@
         color : $white;
         border: 0;
         max-width: fit-content;
+        max-width: -moz-fit-content;
         padding: 1rem 1.3rem 1rem 1.3rem;
         background-image: linear-gradient($colour-secondary, $colour-primary);
         border-radius: 50px;
