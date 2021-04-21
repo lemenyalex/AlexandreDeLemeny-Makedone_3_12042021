@@ -444,6 +444,9 @@ header {
   animation-name: heart-hover;
   animation-duration: 200ms;
 }
+.pageRestaurant__menu__categorie {
+  padding: 0 0 2rem 0;
+}
 .pageRestaurant__menu__categorie__title {
   font-weight: 300;
   padding: 0 0 0 1rem;
@@ -468,6 +471,7 @@ header {
 }
 .pageRestaurant__menu__categorie__plat__subtitle {
   font-weight: lighter;
+  font-size: 0.8rem;
 }
 .pageRestaurant__menu__categorie__plat__price {
   font-weight: bold;
