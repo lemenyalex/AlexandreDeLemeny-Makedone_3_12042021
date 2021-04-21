@@ -162,12 +162,31 @@
 
 @keyframes sortie-animation {
     0% {
-        opacity: 100%
-    }
+        opacity: 100%;
+        transform:translateX(0px);
+        -webkit-transform:translateX(0px);
+        -moz-transform:translateX(0px);
+        -ms-transform:translateX(0px);
+        -o-transform:translateX(0px);
+}
+
+    80% {
+        opacity: 100%;
+        transform:translateX(0px)    ;
+        -webkit-transform:translateX(0px)    ;
+        -moz-transform:translateX(0px)    ;
+        -ms-transform:translateX(0px)    ;
+        -o-transform:translateX(0px)    ;
+}
 
     90% {
-        opacity: 100%;
-    }
+        opacity: 0%;
+        transform:translateX(0px)    ;
+        -webkit-transform:translateX(0px)    ;
+        -moz-transform:translateX(0px)    ;
+        -ms-transform:translateX(0px)    ;
+        -o-transform:translateX(0px)    ;
+}
 
     100%    {
         opacity: 0%;
@@ -177,9 +196,4 @@
         -o-transform: translateX(-99999px);
         transform: translateX(-99999px);
     }
-}
-
-.chargement {
-    -webkit-animation: sortie-animation 1s;
-    animation: sortie-animation 1s;
 }
