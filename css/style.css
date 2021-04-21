@@ -449,6 +449,34 @@ header {
   padding: 0 0 0 1rem;
   border-bottom: 3px solid #99e2d0;
 }
+.pageRestaurant__menu__categorie__plat {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0 1rem;
+  margin: 1rem 1rem 0 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
+  justify-items: center;
+  cursor: pointer;
+}
+.pageRestaurant__menu__categorie__plat__title {
+  font-weight: bold;
+}
+.pageRestaurant__menu__categorie__plat__subtitle {
+  font-weight: lighter;
+}
+.pageRestaurant__menu__categorie__plat__price {
+  font-weight: bold;
+  position: relative;
+  left: calc(100% - 3rem);
+  bottom: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 @keyframes heart-hover {
   0% {
