@@ -110,3 +110,27 @@
         transform: scaleX(1);
     }
 }
+
+
+
+@media only screen and (min-width: 916px) {
+    .pageRestaurant {
+        &__img  {
+            height: 25rem;
+        }
+
+        &__menu {
+
+            display: flex;
+            flex-direction: row;
+
+            &__categorie    {
+                width: 30%;
+            }
+            &__commander    {
+                height: fit-content;
+                align-self: center;
+            }
+        }
+    }
+}

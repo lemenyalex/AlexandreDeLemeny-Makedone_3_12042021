@@ -238,6 +238,11 @@ html {
   color: black;
 }
 
+@media only screen and (min-width: 916px) {
+  .header__arrow {
+    display: none;
+  }
+}
 .location {
   display: flex;
   justify-content: center;
@@ -620,6 +625,22 @@ html {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scaleX(1);
+  }
+}
+@media only screen and (min-width: 916px) {
+  .pageRestaurant__img {
+    height: 25rem;
+  }
+  .pageRestaurant__menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .pageRestaurant__menu__categorie {
+    width: 30%;
+  }
+  .pageRestaurant__menu__commander {
+    height: fit-content;
+    align-self: center;
   }
 }
 
