@@ -21,6 +21,8 @@
     transition-duration: 200ms;
 
     &:hover {
+        background-image: linear-gradient(lighten($colour-secondary, 5%), lighten($colour-primary, 5%));
         transform: scale(1.15);
+        transition-duration: 200ms;
     }
 }
