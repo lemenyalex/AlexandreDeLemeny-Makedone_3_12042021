@@ -21,6 +21,9 @@
 
         &__img  {
 
+            padding: 0 0 0 0;
+            margin : 0 0 0 0;
+
             &__img{
             object-fit: cover;
             width:100%;
@@ -53,7 +56,7 @@
         }
 
         &__name {
-            padding: 1rem 0 .5rem 1rem;
+            padding: 0 0 .5rem 1rem;
             font-weight: bold;
             font-size: 1.2rem;
         }
