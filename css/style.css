@@ -160,7 +160,7 @@
     transform: translateX(-99999px);
   }
 }
-header {
+#logo {
   font-family: "Shrikhand", cursive;
 }
 
@@ -225,11 +225,15 @@ html {
   right: 20%;
   font-size: 1.2rem;
   text-decoration: none;
+  color: black;
 }
 .header__logo {
   display: flex;
   align-content: center;
   justify-content: flex-end;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: black;
 }
 
 .location {
