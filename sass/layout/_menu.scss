@@ -6,6 +6,7 @@
 
     &__title    {
         display: flex;
+        justify-content: center;
         font-weight: bold;
         font-size: 1.7rem;
         text-align: center;
@@ -14,6 +15,7 @@
 
     &__subtitle {
         display: flex;
+        justify-content: center;
         font-weight: 100 ;
         font-size: 1.1rem;
         text-align: center;
@@ -22,7 +24,7 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 916px) {
     .menu{
         padding : 1rem 0 0 0;
     }
