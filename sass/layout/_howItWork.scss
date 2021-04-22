@@ -1,5 +1,7 @@
 .howItWork   {
     padding: 3rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
 
     &__title    {
         font-size: 1.7rem;
@@ -54,6 +56,22 @@
             font-weight: bold;
             padding: 0 0 0 1rem;
             margin: 0 0 0 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .howItWork{
+        height: fit-content;
+        padding : 1rem 0 0 0;
+
+        &__title { 
+            margin : 1rem 0 1rem 0;
+            align-self: center;
+        }
+
+        &__step {
+            margin: .5rem 1rem .5rem 1rem;
         }
     }
 }
