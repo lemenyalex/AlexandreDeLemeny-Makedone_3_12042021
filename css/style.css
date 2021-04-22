@@ -422,6 +422,16 @@ html {
   display: flex;
   flex-direction: column;
 }
+.footer__logo {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 0 0 0 1rem;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: white;
+  font-family: "Shrikhand", cursive;
+}
 .footer__img {
   width: 7rem;
   padding: 2rem 0 1rem 1rem;
