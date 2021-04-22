@@ -209,12 +209,27 @@ html {
     scroll-behavior: auto;
   }
 }
-header {
+.header {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  padding: 1rem 0rem 0.5rem 0rem;
+  height: fit-content;
+  padding: 0.5rem 0 0.5rem 0;
   margin: 0 0 0 0;
   box-shadow: 0rem 0rem 0.5rem 0 rgba(0, 0, 0, 0.7);
+}
+.header__arrow {
+  display: inline-flex;
+  position: relative;
+  right: 20%;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.header__logo {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
 }
 
 .location {
@@ -317,6 +332,10 @@ header {
   border-radius: 1rem;
   box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
 }
+.restaurants__card__img {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
 .restaurants__card__img__img {
   object-fit: cover;
   width: 100%;
@@ -346,7 +365,7 @@ header {
   z-index: 2;
 }
 .restaurants__card__name {
-  padding: 1rem 0 0.5rem 1rem;
+  padding: 0 0 0.5rem 1rem;
   font-weight: bold;
   font-size: 1.2rem;
 }
