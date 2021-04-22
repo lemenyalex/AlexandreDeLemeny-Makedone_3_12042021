@@ -287,6 +287,7 @@ html {
 }
 .howItWork__step:hover {
   background-color: rgba(147, 86, 220, 0.2);
+  transition-duration: 200ms;
 }
 .howItWork__step:hover .howItWork__step__icon {
   color: #9356dc;
