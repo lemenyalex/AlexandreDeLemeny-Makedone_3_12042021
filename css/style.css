@@ -342,6 +342,7 @@ html {
 .restaurants__card__img {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
+  height: 10rem;
 }
 .restaurants__card__img__img {
   object-fit: cover;
@@ -369,10 +370,13 @@ html {
   -o-border-radius: 0.2rem;
   border-radius: 0.2rem;
   margin: 0 0 0 0;
-  z-index: 2;
+  z-index: 1;
+}
+.restaurants__card__img__new-disable {
+  display: none;
 }
 .restaurants__card__name {
-  padding: 0 0 0.5rem 1rem;
+  padding: 1rem 0 0.5rem 1rem;
   font-weight: bold;
   font-size: 1.2rem;
 }
