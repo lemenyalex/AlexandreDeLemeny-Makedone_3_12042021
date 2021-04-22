@@ -19,9 +19,11 @@
 
         &:hover{
             background-color:transparentize($colour-primary, 0.8);
+            transition-duration: 200ms ;            
 
             .howItWork__step__icon {
                 color: $colour-primary;
+                
             }
         }
 
