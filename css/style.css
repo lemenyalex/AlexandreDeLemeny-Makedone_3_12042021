@@ -286,9 +286,11 @@ html {
   -o-border-radius: 20px;
   border-radius: 20px;
   box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
+  transition-duration: 200ms;
 }
 .howItWork__step:hover {
   background-color: rgba(147, 86, 220, 0.2);
+  box-shadow: 0rem 0rem 1rem 0 rgba(0, 0, 0, 0.6);
   transition-duration: 200ms;
 }
 .howItWork__step:hover .howItWork__step__icon {
