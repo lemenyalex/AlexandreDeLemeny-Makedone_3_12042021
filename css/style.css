@@ -205,6 +205,11 @@ html {
   /* Does not work on Safari without Experimentals Features*/
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   /* https://developer.mozilla.org/fr/docs/Web/CSS/scroll-behavior#accessibilit%C3%A9 */
   html {
@@ -234,8 +239,12 @@ html {
   align-content: center;
   justify-content: flex-end;
   text-decoration: none;
-  font-size: 1.7rem;
   color: black;
+}
+.header__logo__text {
+  font-size: 1.7rem;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 @media only screen and (min-width: 916px) {
@@ -251,6 +260,9 @@ html {
 }
 .location__text {
   padding-left: 1rem;
+  font-size: 1rem;
+  margin: 0 0 0 0;
+  font-weight: 400;
 }
 
 .menu {
@@ -571,7 +583,8 @@ html {
 }
 .pageRestaurant__menu__categorie__title {
   font-weight: 300;
-  padding: 0 0 0 1rem;
+  margin: 0 0 0 1rem;
+  width: 2rem;
   border-bottom: 3px solid #99e2d0;
 }
 .pageRestaurant__menu__categorie__plat {
