@@ -596,6 +596,7 @@ main {
   border-bottom: 3px solid #99e2d0;
 }
 .pageRestaurant__menu__categorie__plat {
+  opacity: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -609,6 +610,9 @@ main {
   box-shadow: 0rem 0rem 0.8rem 0 rgba(0, 0, 0, 0.4);
   justify-items: center;
   cursor: pointer;
+  -webkit-animation: 0.5s ease-in-out 4s apparition;
+  animation: 0.5s ease-in-out 4s apparition;
+  animation-fill-mode: forwards;
 }
 .pageRestaurant__menu__categorie__plat__title {
   display: inline-flex;
@@ -665,6 +669,52 @@ main {
   .pageRestaurant__menu__commander {
     height: fit-content;
     align-self: center;
+  }
+}
+.pageRestaurant__menu__categorie__plat:nth-child(1) {
+  animation-delay: 2.56s;
+}
+
+.pageRestaurant__menu__categorie__plat:nth-child(2) {
+  animation-delay: 2.62s;
+}
+
+.pageRestaurant__menu__categorie__plat:nth-child(3) {
+  animation-delay: 2.68s;
+}
+
+.pageRestaurant__menu__categorie__plat:nth-child(4) {
+  animation-delay: 2.74s;
+}
+
+.pageRestaurant__menu__categorie__plat:nth-child(5) {
+  animation-delay: 2.8s;
+}
+
+.pageRestaurant__menu__categorie__plat:nth-child(6) {
+  animation-delay: 2.86s;
+}
+
+.pageRestaurant__menu__categorie__plat:nth-child(7) {
+  animation-delay: 2.92s;
+}
+
+.pageRestaurant__menu__categorie__plat:nth-child(8) {
+  animation-delay: 2.98s;
+}
+
+.pageRestaurant__menu__categorie__plat:nth-child(9) {
+  animation-delay: 3.04s;
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
