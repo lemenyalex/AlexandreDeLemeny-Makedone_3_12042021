@@ -13,7 +13,7 @@
   -o-animation: ball-rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
   animation: ball-rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
   border-radius: 100%;
-  background-color: #d80000;
+  background-color: #9356dc;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -27,7 +27,7 @@
   content: "";
   opacity: 0.8;
   border-radius: 100%;
-  background-color: #0066ff;
+  background-color: #99e2d0;
 }
 
 [data-loader=ball-rotate]:before {
@@ -129,7 +129,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   z-index: 2;
   -webkit-animation: sortie-animation 3s 0s;
   animation: sortie-animation 3s;

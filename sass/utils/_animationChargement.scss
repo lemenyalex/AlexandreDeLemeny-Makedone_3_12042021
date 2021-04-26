@@ -16,7 +16,7 @@
             animation: ball-rotate 1s 0s cubic-bezier(.7, -.13, .22, .86) infinite;
 
     border-radius: 100%;
-    background-color: rgb(216, 0, 0);
+    background-color: $colour-primary;
 
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
@@ -34,7 +34,7 @@
 
     opacity: .8;
     border-radius: 100%;
-    background-color: rgb(0, 102, 255);
+    background-color: $colour-tertiary;
 }
 [data-loader='ball-rotate']:before
 {
@@ -152,7 +152,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0);
     z-index: 2;
     -webkit-animation: sortie-animation 3s 0s;
     animation:sortie-animation 3s;
