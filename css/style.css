@@ -552,7 +552,7 @@ main {
 }
 
 .pageRestaurant {
-  height: auto;
+  padding: 0 0 1rem 0;
 }
 .pageRestaurant__img {
   object-fit: cover;
