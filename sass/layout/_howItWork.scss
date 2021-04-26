@@ -1,4 +1,5 @@
 .howItWork   {
+    background-color: white;
     padding: 3rem 1rem 3rem 1rem;
     display: flex;
     flex-direction: column;
@@ -62,6 +63,7 @@
 
 @media only screen and (min-width: 916px) {
     .howItWork{
+        background-color: $grey;
         height: fit-content;
         padding : 1rem 0 0 0;
 
