@@ -266,7 +266,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .menu {
-  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   padding: 3rem 3rem 4rem 3rem;
@@ -294,6 +293,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 .howItWork {
+  background-color: white;
   padding: 3rem 1rem 3rem 1rem;
   display: flex;
   flex-direction: column;
@@ -349,6 +349,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media only screen and (min-width: 916px) {
   .howItWork {
+    background-color: #f0f0f0;
     height: fit-content;
     padding: 1rem 0 0 0;
   }
@@ -361,7 +362,6 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 .restaurants {
-  background-color: #f0f0f0;
   padding: 2rem 1rem 2rem 1rem;
 }
 .restaurants__title {
@@ -497,6 +497,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #353535;
   display: flex;
   flex-direction: column;
+  height: 13rem;
 }
 .footer__logo {
   display: flex;
@@ -544,6 +545,11 @@ h1, h2, h3, h4, h5, h6, p {
     float: right;
   }
 }
+main {
+  min-height: calc(100vh - 13rem);
+  background-color: #f0f0f0;
+}
+
 .pageRestaurant {
   height: auto;
 }
