@@ -103,10 +103,19 @@
                     right: -5rem;
                     top: 0;
                     padding: 0 0 0 0;
-                    margin : 0 0 0 0;
+                    margin: 0 0 0 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    transition: right 1s ease-in-out;
+                    -webkit-transition: right 1s ease-in-out;
+                    -moz-transition: right 1s ease-in-out;
+                    -ms-transition: right 1s ease-in-out;
+                    -o-transition: right 1s ease-in-out;
+
+                    &:hover {
+                        right: 0rem;
+                    }
 
                     &__check    {
                         font-size: 1.3rem;
@@ -166,3 +175,4 @@
         }
     }
 }
+
