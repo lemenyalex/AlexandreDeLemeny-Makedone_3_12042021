@@ -96,9 +96,22 @@
                 }
 
                 &__animation {
+                    background-color: $colour-tertiary;
+                    height: 100%;
+                    width: 5rem;
+                    position: absolute;
+                    right: -5rem;
+                    top: 0;
+                    padding: 0 0 0 0;
+                    margin : 0 0 0 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     &__check    {
-                        color: $colour-tertiary;
+                        font-size: 1.3rem;
+                        color: white;
+                        padding: 0 0 0 0;
                         
                     }
                 }
