@@ -636,8 +636,23 @@ main {
   width: fit-content;
   padding: 0 0 0.2rem 0;
 }
+.pageRestaurant__menu__categorie__plat__animation {
+  background-color: #99e2d0;
+  height: 100%;
+  width: 5rem;
+  position: absolute;
+  right: -5rem;
+  top: 0;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .pageRestaurant__menu__categorie__plat__animation__check {
-  color: #99e2d0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 0 0 0 0;
 }
 
 @keyframes heart-hover {
