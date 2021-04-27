@@ -613,6 +613,7 @@ main {
   -webkit-animation: 0.5s ease-in-out 4s apparition;
   animation: 0.5s ease-in-out 4s apparition;
   animation-fill-mode: forwards;
+  overflow: hidden;
 }
 .pageRestaurant__menu__categorie__plat__title {
   display: inline-flex;
@@ -620,8 +621,12 @@ main {
 }
 .pageRestaurant__menu__categorie__plat__subtitle {
   display: inline-flex;
+  flex-wrap: nowrap;
   font-weight: lighter;
   font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .pageRestaurant__menu__categorie__plat__price {
   display: inline-flex;
@@ -630,6 +635,9 @@ main {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 0 0.2rem 0;
+}
+.pageRestaurant__menu__categorie__plat__animation__check {
+  color: #99e2d0;
 }
 
 @keyframes heart-hover {
