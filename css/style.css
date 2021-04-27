@@ -615,6 +615,16 @@ main {
   animation-fill-mode: forwards;
   overflow: hidden;
 }
+.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation {
+  right: 0rem;
+}
+.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation__check {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
 .pageRestaurant__menu__categorie__plat__title {
   display: inline-flex;
   font-weight: bold;
@@ -644,23 +654,26 @@ main {
   right: -5rem;
   top: 0;
   padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  margin: 0 0 0 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: right 1s ease-in-out;
-  -webkit-transition: right 1s ease-in-out;
-  -moz-transition: right 1s ease-in-out;
-  -ms-transition: right 1s ease-in-out;
-  -o-transition: right 1s ease-in-out;
-}
-.pageRestaurant__menu__categorie__plat__animation:hover {
-  right: 0rem;
+  transition: right 0.5s ease-out;
+  -webkit-transition: right 0.5s ease-out;
+  -moz-transition: right 0.5s ease-out;
+  -ms-transition: right 0.5s ease-out;
+  -o-transition: right 0.5s ease-out;
 }
 .pageRestaurant__menu__categorie__plat__animation__check {
   font-size: 1.3rem;
   color: white;
   padding: 0 0 0 0;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition-duration: 0.7s;
 }
 
 @keyframes heart-hover {

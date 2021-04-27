@@ -71,6 +71,18 @@
                 animation-fill-mode: forwards;
                 overflow: hidden;
 
+                &:hover &__animation    {
+                    right: 0rem;
+                }
+
+                &:hover &__animation__check  {
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+}
+
                 &__title    {
                     display: inline-flex;
                     font-weight: bold;
@@ -103,26 +115,27 @@
                     right: -5rem;
                     top: 0;
                     padding: 0 0 0 0;
-                    margin: 0 0 0 0;
+                    margin: 0 0 0 4rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    transition: right 1s ease-in-out;
-                    -webkit-transition: right 1s ease-in-out;
-                    -moz-transition: right 1s ease-in-out;
-                    -ms-transition: right 1s ease-in-out;
-                    -o-transition: right 1s ease-in-out;
-
-                    &:hover {
-                        right: 0rem;
-                    }
+                    transition: right .5s ease-out;
+                    -webkit-transition: right .5s ease-out;
+                    -moz-transition: right .5s ease-out;
+                    -ms-transition: right .5s ease-out;
+                    -o-transition: right .5s ease-out;
 
                     &__check    {
                         font-size: 1.3rem;
                         color: white;
                         padding: 0 0 0 0;
-                        
-                    }
+                        transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        -moz-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                        transition-duration: .7s;
+}
                 }
             }
         }
