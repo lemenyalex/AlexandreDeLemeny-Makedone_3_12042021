@@ -599,7 +599,7 @@ main {
   opacity: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 1rem 1rem 0 1rem;
   margin: 1rem 1rem 0 1rem;
   -webkit-border-radius: 1rem;
@@ -625,11 +625,25 @@ main {
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
-.pageRestaurant__menu__categorie__plat__title {
+.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__text {
+  padding: 0 5rem 0 0;
+}
+.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__price {
+  margin: 0 0 0 -5rem;
+}
+.pageRestaurant__menu__categorie__plat__text {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+.pageRestaurant__menu__categorie__plat__text__title {
   display: inline-flex;
   font-weight: bold;
 }
-.pageRestaurant__menu__categorie__plat__subtitle {
+.pageRestaurant__menu__categorie__plat__text__subtitle {
   display: inline-flex;
   flex-wrap: nowrap;
   font-weight: lighter;
@@ -637,14 +651,19 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition-duration: 0.5s;
 }
 .pageRestaurant__menu__categorie__plat__price {
-  display: inline-flex;
-  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
   font-weight: bold;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   padding: 0 0 0.2rem 0;
+  transition: margin 0.5s ease-out;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -ms-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
 }
 .pageRestaurant__menu__categorie__plat__animation {
   background-color: #99e2d0;
