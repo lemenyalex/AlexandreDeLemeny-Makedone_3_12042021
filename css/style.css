@@ -599,7 +599,7 @@ main {
   opacity: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 1rem 1rem 0 1rem;
   margin: 1rem 1rem 0 1rem;
   -webkit-border-radius: 1rem;
@@ -613,23 +613,86 @@ main {
   -webkit-animation: 0.5s ease-in-out 4s apparition;
   animation: 0.5s ease-in-out 4s apparition;
   animation-fill-mode: forwards;
+  overflow: hidden;
 }
-.pageRestaurant__menu__categorie__plat__title {
-  display: inline-flex;
-  font-weight: bold;
+.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation {
+  right: 0rem;
 }
-.pageRestaurant__menu__categorie__plat__subtitle {
+.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation__check {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__text {
+  padding: 0 5rem 0 0;
+}
+.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__price {
+  margin: 0 0 0 -5rem;
+}
+.pageRestaurant__menu__categorie__plat__text {
   display: inline-flex;
+  flex-direction: column;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+.pageRestaurant__menu__categorie__plat__text__title {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.pageRestaurant__menu__categorie__plat__text__subtitle {
+  display: block;
+  flex-wrap: nowrap;
   font-weight: lighter;
   font-size: 0.8rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .pageRestaurant__menu__categorie__plat__price {
-  display: inline-flex;
-  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
   font-weight: bold;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   padding: 0 0 0.2rem 0;
+  transition: margin 0.5s ease-out;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -ms-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+}
+.pageRestaurant__menu__categorie__plat__animation {
+  background-color: #99e2d0;
+  height: 100%;
+  width: 5rem;
+  position: absolute;
+  right: -5rem;
+  top: 0;
+  padding: 0 0 0 0;
+  margin: 0 0 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.5s ease-out;
+  -webkit-transition: right 0.5s ease-out;
+  -moz-transition: right 0.5s ease-out;
+  -ms-transition: right 0.5s ease-out;
+  -o-transition: right 0.5s ease-out;
+}
+.pageRestaurant__menu__categorie__plat__animation__check {
+  font-size: 1.3rem;
+  color: white;
+  padding: 0 0 0 0;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition-duration: 0.7s;
 }
 
 @keyframes heart-hover {
