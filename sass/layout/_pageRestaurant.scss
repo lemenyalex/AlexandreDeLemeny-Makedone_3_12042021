@@ -73,6 +73,7 @@
 
                 &:hover &__animation    {
                     right: 0rem;
+                    opacity: 100%;  //Fix for safari
                 }
 
                 &:hover &__animation__check  {
@@ -139,7 +140,6 @@
                     top: 0;
                     padding: 0 0 0 0;
                     margin: 0 0 0 4rem;
-                    display: flex;
                     justify-content: center;
                     align-items: center;
                     transition: right .5s ease-out;
@@ -147,6 +147,10 @@
                     -moz-transition: right .5s ease-out;
                     -ms-transition: right .5s ease-out;
                     -o-transition: right .5s ease-out;
+                    border-top-right-radius: 1rem;
+                    border-bottom-right-radius: 1rem;
+                    display: flex;
+                    opacity: 0%;    //Fix for safari
 
                     &__check    {
                         font-size: 1.3rem;

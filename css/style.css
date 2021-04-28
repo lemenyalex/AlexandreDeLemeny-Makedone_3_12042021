@@ -617,6 +617,7 @@ main {
 }
 .pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation {
   right: 0rem;
+  opacity: 100%;
 }
 .pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation__check {
   transform: rotate(0deg);
@@ -674,7 +675,6 @@ main {
   top: 0;
   padding: 0 0 0 0;
   margin: 0 0 0 4rem;
-  display: flex;
   justify-content: center;
   align-items: center;
   transition: right 0.5s ease-out;
@@ -682,6 +682,10 @@ main {
   -moz-transition: right 0.5s ease-out;
   -ms-transition: right 0.5s ease-out;
   -o-transition: right 0.5s ease-out;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  opacity: 0%;
 }
 .pageRestaurant__menu__categorie__plat__animation__check {
   font-size: 1.3rem;
