@@ -632,26 +632,26 @@ main {
   margin: 0 0 0 -5rem;
 }
 .pageRestaurant__menu__categorie__plat__text {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
 }
 .pageRestaurant__menu__categorie__plat__text__title {
-  display: inline-flex;
-  font-weight: bold;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .pageRestaurant__menu__categorie__plat__text__subtitle {
-  display: inline-flex;
+  display: block;
   flex-wrap: nowrap;
   font-weight: lighter;
   font-size: 0.8rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  transition-duration: 0.5s;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .pageRestaurant__menu__categorie__plat__price {
   display: flex;
