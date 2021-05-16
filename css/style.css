@@ -646,7 +646,8 @@ main {
   overflow: hidden;
 }
 .pageRestaurant__menu__categorie__plat__text__subtitle {
-  display: block;
+  display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   font-weight: lighter;
   font-size: 0.8rem;
@@ -654,8 +655,8 @@ main {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.pageRestaurant__menu__categorie__plat__price {
-  display: flex;
+.pageRestaurant__menu__categorie__plat__text__subtitle__price {
+  display: inline-flex;
   justify-content: flex-end;
   font-weight: bold;
   width: 100%;

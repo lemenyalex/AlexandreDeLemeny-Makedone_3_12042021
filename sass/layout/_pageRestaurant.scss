@@ -107,28 +107,30 @@
                     }
 
                     &__subtitle {
-                        display: block;
+                        display: flex;
+                        flex-direction: row;
                         flex-wrap: nowrap;
                         font-weight:lighter;
                         font-size: .8rem;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-                        overflow: hidden;  
+                        overflow: hidden;
+
+                        &__price {
+                            display: inline-flex;
+                            justify-content: flex-end;
+                            font-weight: bold;
+                            width: 100%;
+                            padding: 0 0 .2rem 0;
+
+                            //TODO : Reparer l'animation
+                            transition: margin .5s ease-out;
+                            -webkit-transition: margin .5s ease-out;
+                            -moz-transition: margin .5s ease-out;
+                            -ms-transition: margin .5s ease-out;
+                            -o-transition: margin .5s ease-out;
                         }
-                }
-
-
-                &__price {
-                    display: flex;
-                    justify-content: flex-end;
-                    font-weight: bold;
-                    width: 100%;
-                    padding: 0 0 .2rem 0;
-                    transition: margin .5s ease-out;
-                    -webkit-transition: margin .5s ease-out;
-                    -moz-transition: margin .5s ease-out;
-                    -ms-transition: margin .5s ease-out;
-                    -o-transition: margin .5s ease-out;
+                    }
                 }
 
                 &__animation {
