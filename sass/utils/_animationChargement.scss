@@ -154,7 +154,7 @@
     bottom: 0;
     background-color: rgba(0,0,0);
     z-index: 2;
-    -webkit-animation: sortie-animation 3s 0s;
+    -webkit-animation: sortie-animation 3s 0s;    
     animation:sortie-animation 3s;
     animation-fill-mode: forwards
 }
@@ -162,11 +162,11 @@
 
 @keyframes sortie-animation {
     0% {
-        opacity: 100%;
+        opacity: 100%; 
 }
 
     80% {
-        opacity: 100%;
+        opacity: 100%; 
 }
 
     90% {
