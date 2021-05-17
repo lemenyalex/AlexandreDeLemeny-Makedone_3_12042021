@@ -692,7 +692,7 @@ main {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   display: flex;
-  opacity: 100%;
+  opacity: 0%;
 }
 .pageRestaurant__menu__categorie__plat__animation__check {
   font-size: 1.3rem;

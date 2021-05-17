@@ -160,7 +160,7 @@
                     border-top-right-radius: 1rem;
                     border-bottom-right-radius: 1rem;
                     display: flex;
-                    opacity: 100%;    //Fix for safari
+                    opacity: 0%;    //Fix for safari
 
                     &__check    {
                         font-size: 1.3rem;
