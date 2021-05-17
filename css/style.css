@@ -650,22 +650,29 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   font-weight: lighter;
+  justify-content: space-between;
   font-size: 0.8rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.pageRestaurant__menu__categorie__plat__text__subtitle__text {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
 .pageRestaurant__menu__categorie__plat__text__subtitle__price {
-  display: inline-flex;
-  justify-content: flex-end;
+  display: block;
   font-weight: bold;
-  width: 100%;
-  padding: 0 0 0.2rem 0;
-  transition: margin 0.5s ease-out;
-  -webkit-transition: margin 0.5s ease-out;
-  -moz-transition: margin 0.5s ease-out;
-  -ms-transition: margin 0.5s ease-out;
-  -o-transition: margin 0.5s ease-out;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0 0.2rem 0.2rem;
+  margin: 0 0 0 0;
 }
 .pageRestaurant__menu__categorie__plat__animation {
   background-color: #99e2d0;
@@ -675,7 +682,6 @@ main {
   right: -5rem;
   top: 0;
   padding: 0 0 0 0;
-  margin: 0 0 0 4rem;
   justify-content: center;
   align-items: center;
   transition: right 0.5s ease-out;
@@ -686,7 +692,7 @@ main {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   display: flex;
-  opacity: 0%;
+  opacity: 100%;
 }
 .pageRestaurant__menu__categorie__plat__animation__check {
   font-size: 1.3rem;
@@ -730,14 +736,14 @@ main {
   .pageRestaurant__menu {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .pageRestaurant__menu__categorie {
-    width: 30%;
+    width: 33%;
   }
   .pageRestaurant__menu__commander {
-    margin: 0 1rem 0 0;
-    height: fit-content;
-    align-self: center;
+    display: flex;
+    order: 1;
   }
 }
 .pageRestaurant__menu__categorie__plat:nth-child(1) {

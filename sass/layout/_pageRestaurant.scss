@@ -70,6 +70,7 @@
                 animation: .5s ease-in-out 4s apparition ;
                 animation-fill-mode: forwards;
                 overflow: hidden;
+                
 
                 &:hover &__animation    {
                     right: 0rem;
@@ -99,6 +100,7 @@
                     padding: 0 0 0 0;
                     margin: 0 0 0 0;
 
+
                     &__title    {
                         display: block;
                         white-space: nowrap;
@@ -111,24 +113,30 @@
                         flex-direction: row;
                         flex-wrap: nowrap;
                         font-weight:lighter;
+                        justify-content: space-between;
                         font-size: .8rem;
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;
 
-                        &__price {
-                            display: inline-flex;
-                            justify-content: flex-end;
-                            font-weight: bold;
-                            width: 100%;
-                            padding: 0 0 .2rem 0;
+                        &__text{
+                        display: block;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;  
+                        font-weight:lighter;
+                        font-size: .8rem;
+                        margin: 0 0 0 0;
+                        padding: 0 0 0 0;
 
-                            //TODO : Reparer l'animation
-                            transition: margin .5s ease-out;
-                            -webkit-transition: margin .5s ease-out;
-                            -moz-transition: margin .5s ease-out;
-                            -ms-transition: margin .5s ease-out;
-                            -o-transition: margin .5s ease-out;
+                        }
+                        &__price {
+                            display: block;
+                            font-weight: bold;
+                            width: -moz-fit-content;
+                            width: fit-content;
+                            padding: 0 0 .2rem .2rem;
+                            margin: 0 0 0 0;
                         }
                     }
                 }
@@ -141,7 +149,7 @@
                     right: -5rem;
                     top: 0;
                     padding: 0 0 0 0;
-                    margin: 0 0 0 4rem;
+                    //margin: 0 0 0 4rem;
                     justify-content: center;
                     align-items: center;
                     transition: right .5s ease-out;
@@ -152,7 +160,7 @@
                     border-top-right-radius: 1rem;
                     border-bottom-right-radius: 1rem;
                     display: flex;
-                    opacity: 0%;    //Fix for safari
+                    opacity: 100%;    //Fix for safari
 
                     &__check    {
                         font-size: 1.3rem;
@@ -204,14 +212,15 @@
         &__menu {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
 
             &__categorie    {
-                width: 30%;
+                width: 33%;
             }
+
             &__commander    {
-                margin : 0 1rem 0 0;
-                height: fit-content;
-                align-self: center;
+                display: flex;
+                order: 1;
             }
         }
     }
