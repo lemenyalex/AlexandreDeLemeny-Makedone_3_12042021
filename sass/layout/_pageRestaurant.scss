@@ -164,7 +164,7 @@
                         -ms-transform: rotate(180deg);
                         -o-transform: rotate(180deg);
                         transition-duration: .7s;
-}
+                    }
                 }
             }
         }
@@ -194,8 +194,6 @@
         transform: scaleX(1);
     }
 }
-
-
 
 @media only screen and (min-width: 916px) {
     .pageRestaurant {
