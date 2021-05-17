@@ -128,8 +128,8 @@
                         font-size: .8rem;
                         margin: 0 0 0 0;
                         padding: 0 0 0 0;
-
                         }
+
                         &__price {
                             display: block;
                             font-weight: bold;
@@ -141,7 +141,7 @@
                     }
                 }
 
-                &__animation {
+                &__animation {  //block vert
                     background-color: $colour-tertiary;
                     height: 100%;
                     width: 5rem;
