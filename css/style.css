@@ -599,9 +599,8 @@ main {
 .pageRestaurant__menu__categorie__plat {
   opacity: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
-  padding: 1rem 1rem 0 1rem;
   margin: 1rem 1rem 0 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -614,11 +613,47 @@ main {
   -webkit-animation: 0.5s ease-in-out 4s apparition;
   animation: 0.5s ease-in-out 4s apparition;
   animation-fill-mode: forwards;
+  height: 4rem;
+}
+.pageRestaurant__menu__categorie__plat__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-items: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 100%;
+}
+.pageRestaurant__menu__categorie__plat__info__text {
+  display: block;
+  flex-direction: column;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+.pageRestaurant__menu__categorie__plat__info__text__title {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
+.pageRestaurant__menu__categorie__plat__info__text__subtitle {
+  display: block;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.pageRestaurant__menu__categorie__plat__info__price {
+  display: flex;
+  font-weight: bold;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0 0.2rem 0.2rem;
+  margin: 0 0 0 0;
+  align-self: flex-end;
+}
 .pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation {
-  right: 0rem;
-  opacity: 100%;
+  width: 50%;
 }
 .pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation__check {
   transform: rotate(0deg);
@@ -627,73 +662,22 @@ main {
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
-.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__text {
-  padding: 0 5rem 0 0;
-}
-.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__price {
-  margin: 0 0 0 -5rem;
-}
-.pageRestaurant__menu__categorie__plat__text {
-  display: inline-flex;
-  flex-direction: column;
-  width: auto;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-}
-.pageRestaurant__menu__categorie__plat__text__title {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.pageRestaurant__menu__categorie__plat__text__subtitle {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  font-weight: lighter;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.pageRestaurant__menu__categorie__plat__text__subtitle__text {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-weight: lighter;
-  font-size: 0.8rem;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
-.pageRestaurant__menu__categorie__plat__text__subtitle__price {
-  display: block;
-  font-weight: bold;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0 0 0.2rem 0.2rem;
-  margin: 0 0 0 0;
-}
 .pageRestaurant__menu__categorie__plat__animation {
   background-color: #99e2d0;
-  height: 100%;
-  width: 5rem;
-  position: absolute;
-  right: -5rem;
-  top: 0;
+  height: 4rem;
+  width: 0%;
   padding: 0 0 0 0;
   justify-content: center;
-  align-items: center;
-  transition: right 0.5s ease-out;
-  -webkit-transition: right 0.5s ease-out;
-  -moz-transition: right 0.5s ease-out;
-  -ms-transition: right 0.5s ease-out;
-  -o-transition: right 0.5s ease-out;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   display: flex;
-  opacity: 0%;
+  transform-origin: right;
+  transition: width 0.3s ease-out;
+  -webkit-transition: width 0.3s ease-out;
+  -moz-transition: width 0.3s ease-out;
+  -ms-transition: width 0.3s ease-out;
+  -o-transition: width 0.3s ease-out;
+  overflow: hidden;
 }
 .pageRestaurant__menu__categorie__plat__animation__check {
   font-size: 1.3rem;
@@ -704,7 +688,9 @@ main {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
-  transition-duration: 0.7s;
+  transition-duration: 0.5s;
+  justify-self: center;
+  align-self: center;
 }
 
 @keyframes heart-hover {
