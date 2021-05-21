@@ -623,37 +623,50 @@ main {
   align-items: center;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   width: 100%;
+  transition: width 0.3s ease-out;
+  -webkit-transition: width 0.3s ease-out;
+  -moz-transition: width 0.3s ease-out;
+  -ms-transition: width 0.3s ease-out;
+  -o-transition: width 0.3s ease-out;
 }
 .pageRestaurant__menu__categorie__plat__info__text {
-  display: block;
+  display: flex;
   flex-direction: column;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
+  flex-wrap: nowrap;
+  width: 90%;
+  max-width: 90%;
+  min-width: 40%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  z-index: 1;
 }
 .pageRestaurant__menu__categorie__plat__info__text__title {
-  display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .pageRestaurant__menu__categorie__plat__info__text__subtitle {
-  display: block;
   font-weight: 500;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .pageRestaurant__menu__categorie__plat__info__price {
-  display: flex;
+  display: inline-flex;
   font-weight: bold;
-  width: -moz-fit-content;
   width: fit-content;
-  padding: 0 0 0.2rem 0.2rem;
+  padding: 0 0.2rem 0.2rem 0.2rem;
   margin: 0 0 0 0;
   align-self: flex-end;
 }
 .pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation {
-  width: 50%;
+  width: 20%;
+}
+.pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__info {
+  width: 80%;
 }
 .pageRestaurant__menu__categorie__plat:hover .pageRestaurant__menu__categorie__plat__animation__check {
   transform: rotate(0deg);
@@ -667,10 +680,11 @@ main {
   height: 4rem;
   width: 0%;
   padding: 0 0 0 0;
+  margin: 0 0 0 0;
   justify-content: center;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  display: flex;
+  display: inline-flex;
   transform-origin: right;
   transition: width 0.3s ease-out;
   -webkit-transition: width 0.3s ease-out;

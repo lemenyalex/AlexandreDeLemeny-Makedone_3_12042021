@@ -80,24 +80,40 @@
                     align-items: center;
                     padding: .5rem .5rem .5rem .5rem;
                     width: 100%;
+                    transition : width .3s ease-out;
+                    -webkit-transition: width .3s ease-out;
+                    -moz-transition: width .3s ease-out;
+                    -ms-transition: width .3s ease-out;
+                    -o-transition: width .3s ease-out;
+
+
 
                     
                     
                     &__text {
-                    display: block;
-                    flex-direction: column;
-                    padding: 0 0 0 0;
-                    margin: 0 0 0 0;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 0 0 0;
+                        margin: 0 0 0 0;
+                        flex-wrap: nowrap;
+                        width: 90%;
+                        max-width: 90%;
+                        min-width: 40%;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        z-index: 1;
 
 
                         &__title {
-                            display: block;
                             white-space: nowrap;
                             text-overflow: ellipsis;
                             overflow: hidden;
+
+
+
                         }
                         &__subtitle {
-                            display: block;
                             font-weight: 500;
                             white-space: nowrap;
                             text-overflow: ellipsis;
@@ -107,21 +123,23 @@
 
 
                     &__price {
-                        display: flex;
+                        display: inline-flex;
                         font-weight: bold;
-                        width: -moz-fit-content;
                         width: fit-content;
-                        padding: 0 0 .2rem .2rem;
+                        padding: 0 .2rem .2rem .2rem;
                         margin: 0 0 0 0;
                         align-self: flex-end;
-                        
+
                         
                     }
                     
                 }
 
                 &:hover &__animation    {
-                    width: 50%;
+                    width: 20%;
+                }
+                &:hover &__info    {
+                    width: 80%;
                 }
 
                 &:hover &__animation__check  {
@@ -137,10 +155,11 @@
                     height: 4rem;
                     width: 0%;
                     padding: 0 0 0 0;
+                    margin: 0 0 0 0;
                     justify-content: center;
                     border-top-right-radius: 1rem;
                     border-bottom-right-radius: 1rem;
-                    display: flex;
+                    display: inline-flex;
                     transform-origin: right;
                     transition : width .3s ease-out;
                     -webkit-transition: width .3s ease-out;
