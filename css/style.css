@@ -249,11 +249,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 0 0;
 }
 
-@media only screen and (min-width: 916px) {
-  .header__arrow {
-    display: none;
-  }
-}
 .location {
   display: flex;
   justify-content: center;
@@ -302,6 +297,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .howItWork__title {
   font-size: 1.7rem;
+  margin-bottom: 1rem;
 }
 .howItWork__step {
   display: flex;
