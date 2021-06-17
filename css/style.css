@@ -578,7 +578,9 @@ main {
 }
 .pageRestaurant__title__heart:hover {
   font-weight: 900;
-  color: #9356dc;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scaleX(1);
   animation-name: heart-hover;
   animation-duration: 200ms;
